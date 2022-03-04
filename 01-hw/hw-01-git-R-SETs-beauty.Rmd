@@ -1,5 +1,6 @@
 ---
 title: "HW 01 - R, RStudio, Git, and GitHub"
+author: "Elizaveta Zagarina"
 subtitle: "Meet the toolkit"
 output: 
   tufte::tufte_html:
