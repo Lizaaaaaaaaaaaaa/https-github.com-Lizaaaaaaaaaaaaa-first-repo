@@ -256,8 +256,19 @@ beauty %>%
 Let's also look how many professors there are at each age range and what is the dominant sex.
 For this we need to first `group_by()` the `age`, and then do the same counting we did before but using `tally()`.
 
+```{r}
+beauty %>% 
+  group_by(female,age) %>%
+  tally(sort = TRUE) %>%
+  arrange(age) %>%
+  arrange(n,age)
+```
+
+
 ```{marginfigure}
 Older professors are not as common
+
+  
 ```
 
 ```{r prof-ages, eval=TRUE}
